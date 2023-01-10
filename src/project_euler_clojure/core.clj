@@ -1,7 +1,2 @@
-(ns project-euler-clojure.core
-  (:gen-class))
+(ns project-euler-clojure.core)
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
