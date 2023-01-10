@@ -8,14 +8,15 @@
 (ns project-euler-clojure.problem-001)
 
 (defn divisible-by-3-or-5?
-  [number]
-  (or (zero? (mod number 3))
-      (zero? (mod number 5))))
+  [n]
+  (or (zero? (mod n 3))
+      (zero? (mod n 5))))
 
-(def solution-001
+(defn solution-001
+  []
   (->>
    (range 1000)
    (filter divisible-by-3-or-5?)
    (reduce +)))
 
-solution-001
+(solution-001)
